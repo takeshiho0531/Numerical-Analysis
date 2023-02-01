@@ -21,11 +21,11 @@ def gaussian_elimination(A): #A:拡大係数行列
     for i in range(len(A)):
         for j in range(i+1, len(A)-1):
             pivot=max(A[:,i])
-            pivot_row=pivot.index(A)[0]
-            A_pivot = A[pivot_row]
-            A[i+1]=A_pivot
-            A[pivot_row]=A[i+1]
-            
+            pivot_row=pivot.index(A)[0] #TODO
+            A_pivot = A[pivot_row] #TODO
+            A[i+1]=A_pivot #TODO
+            A[pivot_row]=A[i+1] #TODO
+
             m=A[j][i]/A[i][i]
             for k in range(len(A[0])):
                 A[j][k] = A[j][k]-m*A[i][k]
