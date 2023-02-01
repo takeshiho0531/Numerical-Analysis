@@ -6,7 +6,7 @@ def g(x):
     # return
     pass
 
-def functional_iterarion(x, tol): #tol: 許容誤差
+def functional_iterarion(x, tol): #tol: 許容誤差 #TODO: deltaの計算方法考えないと。2乗ノルムとか
     x=0
     delta=0
     while delta>tol:
